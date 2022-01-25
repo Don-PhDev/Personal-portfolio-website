@@ -8,6 +8,25 @@ const hamburger_menu = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector("header nav");
 const links = document.querySelectorAll(".links a");
 
+const btn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".read-more");
+const section_body_card = document.querySelector(".section-body-card");
+
+section_body_card.addEventListener("click", e => {
+  const current = e.target;
+
+  const is_read_more_btn = current.className.includes("read-more-btn");
+
+  if (!is_read_more_btn)
+    return;
+
+  const currentText = e.target.parentNode.querySelector(".read-more");
+
+  currentText.classList.toggle("read-more-active");
+  current.textContent = current.textContent.includes("Read more") ? "Read less" : "Read more";
+
+})
+
 footer_input.addEventListener("focus", () => {
   footer_input.classList.add("focus");
 });
