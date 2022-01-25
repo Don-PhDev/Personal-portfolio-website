@@ -51,17 +51,19 @@
             <div class="links">
               <ul>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about" class="about-page">About</a>
                 </li>
                 <li>
-                  <a href="#skills">Skills</a>
+                  <a href="#skills" class="about-page">Skills</a>
                 </li>
                 <li>
-                  <a href="#portfolio">Portfolio</a>
+                  <a href="#portfolio" class="about-page">Portfolio</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact" class="about-page">Contact</a>
                 </li>
+                <li>
+                  <a href="https://docdro.id/22ki4zm" download="don.usbal.resume.jan2022.pdf" target="_blank" class="active">Download CV</a>
               </ul>
             </div>
 
@@ -78,14 +80,14 @@
               <p class="text">
                 Software Engineer
               </p>
-              <a href="#portfolio" class="btn">See works</a>
+              <a href="#portfolio" class="btn">See Projects</a>
             </div>
           </div>
         </div>
       </header>
 
       <section class="about section" id="about">
-        <div class="container">
+        <div class="container section-body-card">
           <div class="section-header">
             <h3 class="title" data-title="Who Am I">About me</h3>
           </div>
@@ -94,9 +96,26 @@
             <div class="column-1">
               <p class="title-sm">Hi 👋, I'm Don Forrest Usbal</p>
               <p class="text">
-                I am an 19-year-old from Philippines
+                I am a 19-year-old from the Philippines.
                 <br />
-                I've started programming last year and I love it since then.
+                I've been programming since I was 16 years old,
+                <br />
+                and up until now, my enjoyment and excitement seeing my programs work hasn't changed.
+
+                <span class="read-more">
+                  <br />
+                  I've strived to learn and improve my skills every day,
+                  <br />
+                  pulling numerous all-nighters.
+                  <br />
+                  I gain the most satisfaction and confidence when challenged,
+                  and for that reason, I continually pushed myself to do things
+                  <br />
+                  I'd never accomplished before.
+                  <br />
+                  I still have a lot to improve (e.g., this website, if you have constructive criticism
+                  or suggestion, I'd be glad to hear that).
+                </span>
               </p>
 
               <div class="emptys">
@@ -110,7 +129,7 @@
                   <h3 class="empty-title"></h3>
                 </div>
               </div>
-              <a href="#" class="btn">Read more</a>
+              <a href="#about" class="btn read-more-btn">Read more</a>
             </div>
 
             <div class="column-2 image">
@@ -236,66 +255,26 @@
 
         <div class="container">
           <div class="section-header">
-            <h3 class="title" data-title="My works">Portfolio</h3>
+            <h3 class="title" data-title="My projects">Portfolio</h3>
           </div>
 
           <div class="section-body">
             <div class="filter">
               <button class="filter-btn active" data-filter="*">All</button>
-              <button class="filter-btn" data-filter=".ui">UI/UX</button>
-              <button class="filter-btn" data-filter=".webdev">Web Dev</button>
-              <button class="filter-btn" data-filter=".appdev">
-                Mobile App
-              </button>
-              <button class="filter-btn" data-filter=".logo-design">
-                Logo Design
-              </button>
+              <button class="filter-btn" data-filter=".logo-design">React</button>
+              <button class="filter-btn" data-filter=".webdev">Vue</button>
+              <button class="filter-btn" data-filter=".appdev">Ruby on Rails</button>
+              <button class="filter-btn" data-filter=".ui">Vanilla Js</button>
             </div>
 
             <div class="grid">
               <div class="grid-item logo-design">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port1.jpg" alt="" />
+                  <img src="./img/netflix.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>Logo Design</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port2.png" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Web Development</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item ui webdev">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port3.png" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>Web Design</h3>
-                      <h5>View Demo</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item ui">
-                <div class="gallery-image">
-                  <img src="./img/portfolio/port4.png" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h3>UI / UX Design</h3>
+                      <h3>Netflix Clone</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
@@ -303,11 +282,11 @@
               </div>
               <div class="grid-item logo-design">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port5.jpg" alt="" />
+                  <img src="./img/instagram.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>Logo Design</h3>
+                      <h3>Instagram clone</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
@@ -315,55 +294,91 @@
               </div>
               <div class="grid-item appdev">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port6.jpg" alt="" />
+                  <img src="./img/aivoice.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>App Development</h3>
+                      <h3>AI voice generator</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="grid-item logo-design">
+              <div class="grid-item webdev">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port7.jpg" alt="" />
+                  <img src="./img/jira.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>Logo Design</h3>
+                      <h3>Jira clone</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="grid-item appdev ui">
+              <div class="grid-item ui">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port8.png" alt="" />
+                  <img src="./img/blackjack.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>App Development</h3>
+                      <h3>Blackjack</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="grid-item ui webdev">
+              <div class="grid-item ui">
                 <div class="gallery-image">
-                  <img src="./img/portfolio/port9.png" alt="" />
+                  <img src="./img/breakout.png" alt="" />
                   <div class="img-overlay">
                     <div class="plus"></div>
                     <div class="img-description">
-                      <h3>Web Design</h3>
+                      <h3>Breakout game</h3>
                       <h5>View Demo</h5>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- <div class="grid-item logo-design"> -->
+              <!--   <div class="gallery-image"> -->
+              <!--     <img src="./img/jira.png" alt="" /> -->
+              <!--     <div class="img-overlay"> -->
+              <!--       <div class="plus"></div> -->
+              <!--       <div class="img-description"> -->
+              <!--         <h3>Jira clone</h3> -->
+              <!--         <h5>View Demo</h5> -->
+              <!--       </div> -->
+              <!--     </div> -->
+              <!--   </div> -->
+              <!-- </div> -->
+              <!-- <div class="grid-item appdev ui"> -->
+              <!--   <div class="gallery-image"> -->
+              <!--     <img src="./img/portfolio/port8.png" alt="" /> -->
+              <!--     <div class="img-overlay"> -->
+              <!--       <div class="plus"></div> -->
+              <!--       <div class="img-description"> -->
+              <!--         <h3>App Development</h3> -->
+              <!--         <h5>View Demo</h5> -->
+              <!--       </div> -->
+              <!--     </div> -->
+              <!--   </div> -->
+              <!-- </div> -->
+              <!-- <div class="grid-item ui webdev"> -->
+              <!--   <div class="gallery-image"> -->
+              <!--     <img src="./img/portfolio/port9.png" alt="" /> -->
+              <!--     <div class="img-overlay"> -->
+              <!--       <div class="plus"></div> -->
+              <!--       <div class="img-description"> -->
+              <!--         <h3>Web Design</h3> -->
+              <!--         <h5>View Demo</h5> -->
+              <!--       </div> -->
+              <!--     </div> -->
+              <!--   </div> -->
+              <!-- </div> -->
             </div>
             <div class="more-folio">
-              <a href="#" class="btn">More Folio</a>
+              <a href="https://github.com/Don-PhDev?tab=repositories" target="_blank" class="btn">More Projects</a>
             </div>
           </div>
         </div>
@@ -383,42 +398,29 @@
                   <div class="contact-icon">
                     <i class="fas fa-map-marker-alt"></i>
                   </div>
-                  <p class="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                  <p class="info-text">Brgy. Santolan, Palayan City, N.E</p>
                 </div>
 
                 <div class="information">
                   <div class="contact-icon">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class="cib-gmail"></i>
                   </div>
-                  <p class="info-text">lorem@ipsum.com</p>
+                  <p class="info-text">forrest@philippinedev.com</p>
                 </div>
 
                 <div class="information">
                   <div class="contact-icon">
                     <i class="fas fa-phone-alt"></i>
                   </div>
-                  <p class="info-text">123-456-789</p>
+                  <p class="info-text">+63 926 2984 500</p>
                 </div>
               </div>
             </div>
 
             <div class="contact-form">
               <h3 class="title">Contact me</h3>
-              <div class="row">
-                <input
-                  type="text"
-                  class="contact-input"
-                  placeholder="First Name"
-                />
-                <input
-                  type="text"
-                  class="contact-input"
-                  placeholder="Last Name"
-                />
-              </div>
 
               <div class="row">
-                <input type="text" class="contact-input" placeholder="Phone" />
                 <input type="email" class="contact-input" placeholder="Email" />
               </div>
 
@@ -440,27 +442,28 @@
       <div class="container">
         <div class="grid-4">
           <div class="grid-4-col footer-about">
-            <h3 class="title-sm">About</h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              officiis quo officia quia?
-            </p>
+            <h3 class="title-sm"></h3>
+            <p class="text"></p>
           </div>
 
           <div class="grid-4-col footer-links">
-            <h3 class="title-sm">Links</h3>
+            <h3 class="title-sm">Quick links</h3>
             <ul>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a
+                  href="https://docdro.id/22ki4zm"
+                  download="don.usbal.resume.jan2022.pdf"
+                  target="_blank">Download CV
+                </a>
               </li>
             </ul>
           </div>
@@ -487,10 +490,8 @@
           </div>
 
           <div class="grid-4-col footer-newstletter">
-            <h3 class="title-sm">Subscribe</h3>
-            <p class="text">
-              Lorem ipsum dolor, sit amet ipsum dolor sit amet.
-            </p>
+            <h3 class="title-sm"></h3>
+            <p class="text"></p>
             <div class="footer-input-wrap">
               <input type="email" class="footer-input" placeholder="Email" />
               <a href="#" class="input-arrow">
@@ -510,20 +511,20 @@
 
           <div class="followme-wrap">
             <div class="followme">
-              <h3>Follow me</h3>
+              <h3>Let's connect</h3>
               <span class="footer-line"></span>
               <div class="social-media">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
                   <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-twitter"></i>
                 </a>
               </div>
             </div>
