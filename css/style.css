@@ -473,7 +473,8 @@ header .circle-2 {
 }
 
 .card .title-sm {
-  line-height: 0.8;
+  line-height: 2;
+  margin-bottom: 4rem;
 }
 
 .card .text {
@@ -519,7 +520,7 @@ a.link:not(:last-child) {
 }
 
 .firebase:hover {
-  color: #FFCB2B;
+  color: #FFA611;
 }
 
 .git:hover {
@@ -766,6 +767,23 @@ a.link:not(:last-child) {
 
 .about .text {
   margin-top: 1rem;
+  user-select: none;
+}
+
+.read-more {
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: height 150ms ease-in-out;
+}
+
+.read-more-active {
+  opacity: 1;
+  height: 16rem;
+}
+
+.read-more-btn {
+  position: relative;
 }
 
 .emptys {
@@ -863,6 +881,7 @@ a.link:not(:last-child) {
   width: 100%;
   border-radius: 45px;
   padding: 5.5rem 4.5rem;
+  margin: 5.78rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -947,7 +966,7 @@ a.link:not(:last-child) {
 
 .contact-input.textarea {
   resize: none;
-  min-height: 280px;
+  min-height: 213px;
   border-radius: 2rem;
 }
 
